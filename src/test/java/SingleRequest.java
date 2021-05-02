@@ -9,7 +9,7 @@ public class SingleRequest {
         this.object = request;
     }
 
-    @JsonProperty("{requestName}")
+    @JsonProperty("SearchV2Request")
     public Object getObject() {
         return object;
     }

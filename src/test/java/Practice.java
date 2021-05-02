@@ -28,11 +28,11 @@ public class Practice {
 
     @Test
     void SearchTest(){
-        //SearchRequest searchRequest = new SearchRequest("test");
+        SearchRequest searchRequest = new SearchRequest("test");
         RequestProperties requestProperties = new RequestProperties();
         given().
                 contentType(ContentType.JSON).
-                body(requestProperties).
+                body(searchRequest).
                 log().body().
         when().
                 post("https://api.cafebazaar.ir/rest-v1/process/SearchV2Request").

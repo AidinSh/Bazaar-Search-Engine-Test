@@ -1,14 +1,16 @@
+package Bodies.SearchBody;
+
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonPropertyOrder({"canReplaceSpellCheckerQuery", "language", "query", "scope", "entities"})
-public class SearchV2Request {
+public class SearchBody {
     private Boolean canReplaceSpellCheckerQuery;
     private String language;
     private String query;
     private String scope;
     private String entities;
 
-    SearchV2Request(String query){
+    public SearchBody(String query){
         this.canReplaceSpellCheckerQuery = false;
         this.language = "fa";
         this.query = query;

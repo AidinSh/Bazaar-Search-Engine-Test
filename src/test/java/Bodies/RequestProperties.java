@@ -1,3 +1,5 @@
+package Bodies;
+
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonPropertyOrder({"appThemeState", "clientID", "clientVersion", "clientVersionCode", "isKidsEnabled", "language", "lat", "lon"})
@@ -11,7 +13,7 @@ public class RequestProperties {
     private double lat;
     private double lon;
 
-    RequestProperties(){
+    public RequestProperties(){
         this.appThemeState = 0;
         this.clientID = "Pt10sNWXTjSyM-ArRcORYQ";
         this.clientVersion = "12.1.0";
@@ -54,11 +56,11 @@ public class RequestProperties {
         this.clientVersionCode = clientVersionCode;
     }
 
-    public Boolean getKidsEnabled() {
+    public Boolean getIsKidsEnabled() {
         return isKidsEnabled;
     }
 
-    public void setKidsEnabled(Boolean kidsEnabled) {
+    public void setIsKidsEnabled(Boolean kidsEnabled) {
         isKidsEnabled = kidsEnabled;
     }
 

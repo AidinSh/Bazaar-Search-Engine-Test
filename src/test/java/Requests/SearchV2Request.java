@@ -1,15 +1,20 @@
-import com.fasterxml.jackson.annotation.JsonProperty;
+package Requests;
+
+import Bodies.RequestProperties;
+import Bodies.SearchBody.SearchBody;
+import Bodies.SearchBody.SearchSingleRequest;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-public class SearchRequest {
+@JsonPropertyOrder({"properties", "singleRequest"})
+public class SearchV2Request {
     private Object properties;
     private Object singleRequest;
 
-    @JsonPropertyOrder({"properties", "singleRequest"})
-    SearchRequest(String query){
+
+    public SearchV2Request(String query){
         this.properties = new RequestProperties();
-        SearchV2Request searchV2Request = new SearchV2Request(query);
-        this.singleRequest = new SingleRequest(searchV2Request, "SearchV2Request");
+        SearchBody searchBody = new SearchBody(query);
+        this.singleRequest = new SearchSingleRequest(searchBody);
     }
 
     public Object getProperties() {

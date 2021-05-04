@@ -1,15 +1,14 @@
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+package Bodies.PredictionBody;
 
-@JsonPropertyOrder("object")
-public class SingleRequest {
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class PredictionSingleRequest {
     private Object object;
 
-    SingleRequest(Object request, String requestName){
+    public PredictionSingleRequest(Object request){
         this.object = request;
     }
-
-    @JsonProperty("SearchV2Request")
+    @JsonProperty("predictionRequest")
     public Object getObject() {
         return object;
     }

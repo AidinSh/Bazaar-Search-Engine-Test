@@ -15,7 +15,8 @@ public class RequestProperties {
 
     public RequestProperties(){
         this.appThemeState = 0;
-        this.clientID = "Pt10sNWXTjSyM-ArRcORYQ";
+        //this.clientID = "Pt10sNWXTjSyM-ArRcORYQ";
+        this.clientID = "6";
         this.clientVersion = "12.1.0";
         this.clientVersionCode = 1200100;
         this.isKidsEnabled = false;

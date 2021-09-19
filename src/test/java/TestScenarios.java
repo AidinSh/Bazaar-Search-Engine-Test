@@ -11,9 +11,9 @@ public class TestScenarios {
         given().
                 contentType(ContentType.JSON).
                 body(searchV2Request).
-                when().
+        when().
                 post(base_url + "/SearchV2Request").
-                then().
+        then().
                 assertThat().statusCode(200);
     }
 
@@ -22,9 +22,9 @@ public class TestScenarios {
         given().
                 contentType(ContentType.JSON).
                 body(predictionRequest).
-                when().
+        when().
                 post(base_url + "/PredictionRequest").
-                then().
+        then().
                 assertThat().body("singleReply.predictionReply.items[0].title", is(expectedHistory));
     }
 }

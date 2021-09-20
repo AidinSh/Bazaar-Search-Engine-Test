@@ -83,15 +83,3 @@ public class Header {
     }
 }
 
-
-
-/*
-headers("Authorization","Bearer 05zLkDmPoPTz0DtsxcDh0EBf1X3UNJvrhP83I5lhh99whq0/G8m0qF8R/MxvIGWt7UUz9p2faCfonm8hv4xNkUJhdh3YG+SCSvZC1d+RVVTyKsytUmVUfXIOrHPZ776w6/sAo+Wdqq3pJPPo4QH9gOFP51ySEPu8QJRS4zoAEQAB").
-                header("Device-Id", "95ee79038dcb5b7c44008f8cd54115932b193188").
-                header("Content-Type", "application/json").
-                header("Client-Id", "Pt10sNWXTjSyM-ArRcORYQ").
-                header("Ad-Id", "05eabe46-ae32-4d03-88b4-92d00b2ca1bc").
-                header("Accept-Language", "fa").
-                header("User-Agent", "Bazaar/1200100 (Android 29; motorola moto g 5G plus)").
-                header("Android-Id", "0f1928df4a9cc474").
- */
